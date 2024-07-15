@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 task.classList.add('completed');
             } else {
                 totalMinutes -= time;
-                showAlert(`TAREA "${name}" MARCADA INCOMPLETA. TOTAL DE TIEMPO INVERTIDO: ${totalMinutes} MINUTOS.`, 'danger');
+                showAlert(`TAREA "${name}" INCOMPLETA. TOTAL DE TIEMPO INVERTIDO: ${totalMinutes} MINUTOS.`, 'danger');
                 task.classList.remove('completed');
             }
             updateTimeCount();
