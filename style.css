@@ -37,3 +37,20 @@ input[type="text"], input[type="number"], button {
     border-radius: 4px;
     box-sizing: border-box;
 }
+
+.alert {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: #116725;
+}
+
+.alert-danger {
+    background-color: #dc3545;
+} 
