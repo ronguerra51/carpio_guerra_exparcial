@@ -1,11 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TAREAS DIARIAS</title>
 </head>
+
 <body>
+    <div class="container">
+        <h1>LISTA DE TAREAS</h1>
+        <form id="taskForm">
+            <label for="taskName">NOMBRE DE LA TAREA:</label>
+            <input type="text" id="taskName" required>
+            <label for="taskTime">TIEMPO APROXIMADO (MINUTOS):</label>
+            <input type="number" id="taskTime" min="1" required>
+            <button type="submit">AGREGAR TAREA</button>
+        </form>
     
+        <div id="taskList">
+            <div class="task">
+                <span class="task-name">Hacer ejercicio</span> - <span class="task-time">30 minutos</span>
+                <input type="checkbox">
+            </div>
+            <div class="task">
+                <span class="task-name">Hacer aseo personal</span> - <span class="task-time">20 minutos</span>
+                <input type="checkbox">
+            </div>
+            <div class="task">
+                <span class="task-name">Revisar correos electrónicos</span> - <span class="task-time">15 minutos</span>
+                <input type="checkbox">
+            </div>
+            <div class="task">
+                <span class="task-name">Estudiar JavaScript</span> - <span class="task-time">60 minutos</span>
+                <input type="checkbox">
+            </div>
+            <div class="task">
+                <span class="task-name">Hacer compras</span> - <span class="task-time">45 minutos</span>
+                <input type="checkbox">
+            </div>
+            <div class="task">
+                <span class="task-name">Llamar a un amigo</span> - <span class="task-time">10 minutos</span>
+                <input type="checkbox">
+            </div>
+        </div>
+
+        <div id="totalTime">
+            <p>TOTAL DE TIEMPO INVERTIDO: <span id="totalTimeCount">0</span> MINUTOS </p>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
 </body>
+
 </html>
